@@ -131,9 +131,6 @@ $ pipenv run python app/main.py
 
 
 
-## Screenshots
-
-
 ## Contact me
 - **Email**: [seraph776@gmail.com](mailto:seraph776@gmail.com)
 
