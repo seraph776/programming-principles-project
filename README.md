@@ -9,7 +9,7 @@ This is a programming assignment from `PROG 10004 – Programming Principles` co
 
 
 <details>
-<summary> Click to view 🎯 </summary>
+<summary> 🎯 Click to view  </summary>
 
 
 Using the Object-Oriented UML model provided, create an Object-Oriented program that creates a
