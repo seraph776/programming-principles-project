@@ -5,7 +5,7 @@ created: 2022-11-22
 """
 
 import logging
-logging.basicConfig(filename='transaction.log',
+logging.basicConfig(filename='application.log',
                     filemode='a',
                     format='[%(asctime)s][%(levelname)s] %(message)s',
                     datefmt='%Y-%m-%d',

@@ -1,4 +1,4 @@
-# programming-principles-project
+# Programming Principles project
 programming principles class project
 
 

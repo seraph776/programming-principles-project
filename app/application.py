@@ -107,7 +107,7 @@ class Application:
                 self.show_main_menu()
 
     def run(self):
-        print(Colorz.green('Loading Bank application with 3 Bank accounts and 3 Chequing accounts...\n'))
+        print(Colorz.green('Loading account list with three (3) ChequingAccount instances and three (3) SavingsAccount instances ...\n'))
         time.sleep(3)
 
         # Define a constructor that populates the account list with hardcoded of three
