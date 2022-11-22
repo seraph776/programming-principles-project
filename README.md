@@ -95,7 +95,42 @@ inform the user about the error and terminate the application. Examples:
 
 ## Requirements
 
-This project was built using the Python 3.10.1
+This project was built using the Python `3.10.1`
+
+## Setup Instructions
+
+Instructions on how to create a `pipenv` virtual environment.
+
+
+<details>
+<summary>⚙️  Click to View </summary>
+
+1. Download [zip file](https://github.com/seraph776/programming-principles-project/archive/refs/heads/main.zip) 
+2. Extract zip files
+3. Change directory into projectFolder:
+
+```
+$ cd projectFolder
+```
+
+4. Install from Pipfile:
+
+```
+$ pipenv install  
+```
+
+5. Run the application from within virtual environment:
+
+```
+$ pipenv run python app/main.py
+```
+
+</details>
+
+
+
+## Screenshots
+
 
 ## Contact me
 - **Email**: [seraph776@gmail.com](mailto:seraph776@gmail.com)
