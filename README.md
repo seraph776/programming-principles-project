@@ -108,7 +108,7 @@ inform the user about the error and terminate the application. Examples:
 
 ## Requirements
 
-This project was built using the Python `3.10.1`
+This project was built using the Python `3.10.1`.
 
 ## Setup Instructions
 
