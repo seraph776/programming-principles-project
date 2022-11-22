@@ -6,14 +6,12 @@
 
 import random
 from savings_account import SavingsAccount
-from chequing_account import CheckingAccount
+from chequing_account import ChequingAccount
 
 
 class Bank:
     def __init__(self):
         self._available_accounts = []
-        self._number_of_accounts = len(self._available_accounts)
-        self._account_list =[i._account_number for i in self._available_accounts]
 
     def add_account(self, account):
         self._available_accounts.append(account)
@@ -25,7 +23,7 @@ class Bank:
         print('Please select the type of account you want to open (1-2)')
         available_account_types = {1:'Savings', 2:'Chequing'}
         for idx, item in available_account_types.items():
-            print(f'{idx} - {item}')
+            print(f'\t{idx} - {item}')
 
         while True:
             user_choice = input('> ')
@@ -37,16 +35,18 @@ class Bank:
 
         account_type = available_account_types.get(int(user_choice))
         account_holder_name = input('Please enter your name:\n> ')
-        account_number = random.randint(1000, 9999)
+
 
         if account_type == 'Savings':
-            self.add_account(SavingsAccount(account_number, account_holder_name, 0))
+            self.add_account(SavingsAccount(account_holder_name, 0))
         else:
-            self.add_account(CheckingAccount(account_number, account_holder_name, 0))
-        print(f'{account_type} account #{account_number} has been added to available Bank accounts')
+            self.add_account(ChequingAccount(account_holder_name, 0))
+        print(f'{account_type} account has been added to available Bank accounts')
 
     def search_account(self, account_number):
-        if account_number not in self._account_list:
+        if account_number not in [a._account_number for a in self._available_accounts]:
             print('Account could not be found!')
 
-
+        for account in self._available_accounts:
+            if account_number == account._account_number:
+                return account

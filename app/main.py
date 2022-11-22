@@ -7,15 +7,13 @@ created: 2022-11-21
 from bank import Bank
 from application import Application
 from savings_account import SavingsAccount
-from chequing_account import CheckingAccount
+from chequing_account import ChequingAccount
 
 
 def main():
-    pass
-
+    bank = Bank()
+    app = Application(bank).run()
 
 
 if __name__ == '__main__':
     main()
-
-

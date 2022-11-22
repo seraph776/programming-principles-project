@@ -3,15 +3,16 @@
 created: 2022-11-21
 @author: seraph1001100
 """
+import random
 
 
 class Account:
-    def __init__(self, account_number, account_holder_name, current_balance):
-        self._account_number = account_number
+    def __init__(self, account_holder_name, current_balance):
+        self.class_type = self.__class__.__name__
+        self._account_number = random.randint(10000, 99999)
         self._account_holder_name = account_holder_name
         self._current_balance = current_balance
         self._rate_of_interest = .03
-
 
     def __repr__(self):
         return f'{self.__class__.__name__}(accountNumber={self._account_number},' \
@@ -25,7 +26,7 @@ class Account:
     @account_holder_name.setter
     def account_holder_name(self, new_name):
         self._account_holder_name = new_name
-        print('Name has been changed!')
+        print('Account name has been updated.')
 
     @property
     def rate_of_interest(self):
@@ -49,9 +50,12 @@ class Account:
 
     def deposit(self, amount):
         self._current_balance += amount
+        return True
 
     def withdraw(self, amount):
-        if self._current_balance >= amount:
-            self._current_balance -= amount
-        else:
+        if amount > self._current_balance:
             return False
+
+        else:
+            self._current_balance -= amount
+            return True
