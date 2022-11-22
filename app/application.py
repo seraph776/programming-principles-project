@@ -125,7 +125,7 @@ class Application:
         print(Colorz.green('Testing Account "account_holder_name" setter method...'))
         time.sleep(2)
         before = chequing_1.account_holder_name
-        chequing_1.account_holder_name = 'alex'
+        chequing_1.account_holder_name = 'seraph'
         print(f'{before.title()} has been updated to {chequing_1.account_holder_name.title()}!\n')
         time.sleep(2)
 

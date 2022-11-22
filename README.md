@@ -87,15 +87,17 @@ Using standard error checking (if-else) as well as exception handling (try-
 except) to ensure the user input is valid both in terms of range and type of data entered. The application
 should not crash at any point due to data input / processing. If recovery from the error(s) is not possible,
 inform the user about the error and terminate the application. Examples:
-• Negative values for withdrawal/deposit amounts should not be allowed.
-• If conversion of the user input to a number of fails, the code should handle the exception.
+- Negative values for withdrawal/deposit amounts should not be allowed.
+- If conversion of the user input to a number of fails, the code should handle the exception.
+
+**The program also included logging.**
 
 
 </details>
 
 ## Requirements
 
-This project was built using the Python `3.10.1`
+This project was built using the Python `3.10.1`.
 
 ## Setup Instructions
 
