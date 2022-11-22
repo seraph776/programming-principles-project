@@ -129,13 +129,6 @@ $ pipenv run python app/main.py
 
 
 
-## Screenshots
-
-
-![image](https://user-images.githubusercontent.com/72005563/203416808-987dee3d-fcd2-4f0a-88b9-694778fdb16f.png)
-![image](https://user-images.githubusercontent.com/72005563/203417243-2135f7ba-8668-49e1-a02c-ecdae1cd3f94.png)
-
-
 ## Contact me
 - **Email**: [seraph776@gmail.com](mailto:seraph776@gmail.com)
 
