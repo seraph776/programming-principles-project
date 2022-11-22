@@ -7,6 +7,11 @@ This is a programming assignment from `PROG 10004 – Programming Principles` co
 
 ## Objective
 
+
+<details>
+<summary> Click to view 🎯 </summary>
+
+
 Using the Object-Oriented UML model provided, create an Object-Oriented program that creates a
 simple banking application which allows the user to open an account, select an account to withdraw and
 deposit money, check balance. The structure of the program:
@@ -83,7 +88,10 @@ except) to ensure the user input is valid both in terms of range and type of dat
 should not crash at any point due to data input / processing. If recovery from the error(s) is not possible,
 inform the user about the error and terminate the application. Examples:
 • Negative values for withdrawal/deposit amounts should not be allowed.
-• If conversion of the user input to a number fails, the code should handle the exception.
+• If conversion of the user input to a number of fails, the code should handle the exception.
+
+
+</details>
 
 ## Requirements
 
@@ -91,3 +99,8 @@ This project was built using the Python 3.10.1
 
 ## Contact me
 - **Email**: [seraph776@gmail.com](mailto:seraph776@gmail.com)
+
+
+## License
+
+[MIT](https://github.com/seraph776/programming-principles-project/blob/main/LICENSE) © [Seraph★776](https://github.com/seraph776) 
