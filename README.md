@@ -1,15 +1,20 @@
-# Programming Principles project
-programming principles class project
-
+# Simple Banking Application
 
 ## Summary
 
-Using the Object-Oriented UML model provided, create an Object-Oriented program that creates a
-simple banking application which allows the user to open an account, select an account to withdraw and
-deposit money, check balance.
+This is a programming assignment from `PROG 10004 – Programming Principles` course offered at `Sheridan College CA`.  
 
 
 ## Objective
+
+Using the Object-Oriented UML model provided, create an Object-Oriented program that creates a
+simple banking application which allows the user to open an account, select an account to withdraw and
+deposit money, check balance. The structure of the program:
+
+![image](https://user-images.githubusercontent.com/72005563/203414340-c85e9f54-df78-4bcc-bfeb-a41c128f6170.png)
+
+
+
 
 ## Part I User Interaction
 
