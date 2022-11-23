@@ -67,7 +67,6 @@ class Application:
             print('3 - Withdraw')
             print('4 - Exit Account')
             print('Please make a selection (1-4)')
-            print('Please make a selection (1-4)')
             while True:
                 user_input = input('> ')
                 if not user_input.isdigit() or int(user_input) not in [1, 2, 3, 4]:
@@ -75,10 +74,10 @@ class Application:
                     continue
                 else:
                     break
-            if user_input == 'Check Balance':
+            if user_input == 1:
                 print(f'>>> Account Balance: ${selected_account._current_balance:.2f}')
                 continue
-            elif user_input == 'Deposit':
+            elif user_input == 2:
                 while True:
                     amount = input('Enter amount that you wish to deposit:\n> ')
                     if not amount.isdigit():
@@ -90,7 +89,7 @@ class Application:
                 selected_account.deposit(int(amount))
                 print(
                     f'>>> ${amount} has been deposited. Your current balance is now: ${selected_account._current_balance:.2f} ')
-            elif user_input == 'Withdraw':
+            elif user_input == 3:
                 while True:
                     amount = input('Enter amount that you wish to withdraw:\n> ')
                     if not amount.isdigit():
@@ -100,7 +99,7 @@ class Application:
                         continue
                     else:
                         break
-            elif user_input == 'Exit Account':
+            elif user_input == 4:
                 self.show_main_menu()
 
     def run(self):
