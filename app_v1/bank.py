@@ -25,6 +25,14 @@ class Bank:
         for idx, item in available_account_types.items():
             print(f'\t{idx} - {item}')
 
+            while True:
+                user_choice = input('> ')
+                if not user_choice.isdigit() or int(user_choice) not in [1, 2]:
+                    print('Invalid input!')
+                    continue
+                else:
+                    break
+
         while True:
             user_choice = input('> ')
             if not user_choice.isdigit() or int(user_choice) not in [1,2]:

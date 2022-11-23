@@ -6,13 +6,11 @@ created: 2022-11-21
 
 from bank import Bank
 from application import Application
-from savings_account import SavingsAccount
-from chequing_account import ChequingAccount
 
-2
+
 def main():
     bank = Bank()
-    app = Application(bank).run()
+    Application(bank).run()
 
 
 if __name__ == '__main__':
